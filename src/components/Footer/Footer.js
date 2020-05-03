@@ -22,7 +22,7 @@ class Footer extends React.Component {
       className: "github",
       src: github,
       alt: "github",
-      link: "https://github.com/jkmagnussen/React-Authorization-Form",
+      link: "https://github.com/jkmagnussen/ravenous",
     },
   ];
 
