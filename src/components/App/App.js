@@ -33,6 +33,7 @@ class App extends React.Component {
       <div className="App">
       <h1>ravenous</h1>
       <SearchBar />
+      // sends the businesses array to the business list component.
       <BusinessList businesses={businesses} /> 
       < Footer />
 </div>
