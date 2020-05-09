@@ -28,12 +28,21 @@ const businesses = [
 ]
 
 class App extends React.Component {
+  constructor(props){
+    super(props) 
+    this.searchYelp = this.searchYelp.bind(this)
+  }
+
+  searchYelp(term, location, sortBy){
+    console.log(`searching Yelp with ${term}, ${location} and ${sortBy}`)
+
+  }
+
   render (){
     return (
       <div className="App">
-      <h1>ravenous</h1>
-      <SearchBar />
-      // sends the businesses array to the business list component.
+      <h1>nom nom</h1>
+      <SearchBar searchYelp={this.searchYelp}/>
       <BusinessList businesses={businesses} /> 
       < Footer />
 </div>
