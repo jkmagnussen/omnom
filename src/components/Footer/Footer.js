@@ -8,18 +8,21 @@ class Footer extends React.Component {
   logos = [
     {
       className: "home",
+      key: 1,
       src: home,
       alt: "home",
       link: "https://jkmagnussen.com/",
     },
     {
       className: "linkedIn",
+      key: 2,
       src: linkedIn,
       alt: "linkedin",
       link: "https://linkedin.com/in/joseph-magnussen/",
     },
     {
       className: "github",
+      key: 3,
       src: github,
       alt: "github",
       link: "https://github.com/jkmagnussen/ravenous",
@@ -29,8 +32,9 @@ class Footer extends React.Component {
   render() {
     const X = this.logos.map((item) => {
       return (
-        <a href={item.link}>
+        <a key={item.alt} href={item.link}>
           <img
+          key={item.alt}
             className={item.className}
             src={item.src}
             alt={item.alt}
